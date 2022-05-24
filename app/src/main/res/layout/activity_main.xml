@@ -1,4 +1,8 @@
+//scriptdibawah ini memiliki arti bahwa dokumen ini dibuat dengan aturan XML versi 1.0.
+//Encoding menunjukkan bahwa file XML ini ditulis dengan kode UTF-8.
 <?xml version="1.0" encoding="utf-8"?>
+
+//Relative Layout merupakan layout yang paling fleksibel yang berfungsi untuk memposisikan komponen mana saja yang kita inginkan. 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,6 +11,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    //Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+    //Dimana pada textview ini kita juga bisa mengatur ukuran, panjang, lebar, tata letak teks dan lain sebagainya.
+    //pada blok ini kita mengatur tampilan textview untuk teks File Name pada projek kita.
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -20,6 +27,12 @@
         android:text="File Name"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 
+    //EditText digunakan untuk menginput atau memasukkan tulisan, teks atau angka.
+    //Atribut android:id  digunakan untuk memberikan identitas atau kode yang unik pada EditText.
+    //Atribut android:hint digunakan untuk memberikan hint atau petunjuk.
+    //dengan arti lain memberikan petunjuk kepada pengguna apa yang harus diisi oleh pengguna di dalam EditText tersebut.
+    //sedangkan atribut android:layout_weight berfungsi untuk menentukan berapa lebar atau tinggi pada suatu view.
+    //pada blok ini kita akan memasukkan inputan data File Name.
     <EditText
         android:id="@+id/editFile"
         android:layout_width="wrap_content"
@@ -35,6 +48,9 @@
         android:inputType="textPersonName"
         android:hint="file name" />
 
+    //Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+    //Dimana pada textview ini kita juga bisa mengatur ukuran, panjang, lebar, tata letak teks dan lain sebagainya.
+    //pada blok ini kita mengatur tampilan textview untuk teks File Data pada projek kita.
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -46,6 +62,12 @@
         android:text="File Data"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 
+    //EditText digunakan untuk menginput atau memasukkan tulisan, teks atau angka.
+    //Atribut android:id  digunakan untuk memberikan identitas atau kode yang unik pada EditText.
+    //Atribut android:hint digunakan untuk memberikan hint atau petunjuk.
+    //dengan arti lain memberikan petunjuk kepada pengguna apa yang harus diisi oleh pengguna di dalam EditText tersebut.
+    //sedangkan atribut android:layout_weight berfungsi untuk menentukan berapa lebar atau tinggi pada suatu view.
+    //pada blok ini kita akan memasukkan inputan data File Data.
     <EditText
         android:id="@+id/editData"
         android:layout_width="wrap_content"
@@ -58,6 +80,12 @@
         android:lines="5"
         android:hint="data" />
 
+    //Button atau tombol berfungsi untuk mengeksekusi program dan melakukan perintah tertentu.
+    //Atribut android:id berfungsi Untuk menginisialisasi id pada Button tersebut.
+    //Atribut android:layout_width berfungsiUntuk mengatur lebar widget.
+    //Atribut android:layout_height berfungsiUntuk mengatur tinggi widget.
+    //Atribut android:text berfungsi menambahkan text pada widget.
+    //pada blok ini kita mengatur tampilan button save.
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
@@ -70,6 +98,12 @@
         android:layout_marginStart="49dp"
         android:text="Save" />
 
+    //Button atau tombol berfungsi untuk mengeksekusi program dan melakukan perintah tertentu.
+    //Atribut android:id berfungsi Untuk menginisialisasi id pada Button tersebut.
+    //Atribut android:layout_width berfungsiUntuk mengatur lebar widget.
+    //Atribut android:layout_height berfungsiUntuk mengatur tinggi widget.
+    //Atribut android:text berfungsi menambahkan text pada widget.
+    //pada blok ini kita mengatur tampilan button view.
     <Button
         android:id="@+id/btnView"
         android:layout_width="wrap_content"
